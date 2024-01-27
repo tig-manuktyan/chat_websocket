@@ -1,0 +1,32 @@
+{
+  "name": "simple-chat-websocket-reactjs",
+  "version": "1.0.6",
+  "main": "index.js",
+  "scripts": {
+    "start_server": "node server.js",
+    "start_client": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "license": "ISC",
+  "keywords": [
+    "cashbac",
+    "front-end",
+    "react",
+    "react js",
+    "chat",
+    "node",
+    "node Js",
+    "websocket",
+    "web",
+    "socket"
+  ],
+  "dependencies": {
+    "prop-types": "^15.7.2",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-scripts": "1.1.5",
+    "ws": "^7.4.4"
+  }
+}

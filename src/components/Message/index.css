@@ -1,0 +1,38 @@
+.messageBox {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background-color: red;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.messageItem {
+  border-radius: 8px;
+  background: #2f2f32;
+  min-width: 200px;
+  max-width: 350px;
+  width: 100%;
+  height: auto;
+  padding: 5px 10px ;
+  line-height: 20px;
+  box-sizing: border-box;
+  overflow: hidden;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.message {
+  color: #fff;
+  font-family: Roboto;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
