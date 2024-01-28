@@ -1,11 +1,26 @@
-import React from "react";
-import Chat from "./Chat";
+import React, { useContext } from "react";
+import {
+  Routes,
+  Route,
+  Navigate,
+} from "react-router-dom";
+import Chat from "./pages/Chat";
+import Login from "./pages/Login";
+import { AuthContext } from "./context";
 
 const App = () => {
-  return (
-    <div className="App">
-      <Chat />
-    </div>
+  const authContext = useContext(AuthContext);
+
+  return authContext.isAuthenticated ? (
+    <Routes>
+      <Route path="/chat" element={<Chat />} />
+      <Route path="/*" element={<Navigate to="/chat" />} />
+    </Routes>
+  ) : (
+    <Routes>
+      <Route path="/" element={<Login />} />
+      <Route path="/*" element={<Navigate to="/" />} />
+    </Routes>
   );
 };
 

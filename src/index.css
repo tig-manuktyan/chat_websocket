@@ -2,60 +2,27 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-}
-.fixed-chat {
-	background: #161819;  bottom: 0;
-	  border-radius: 5px 5px 0px 0px;
-  width: 100%;
-  height: 100vh;
-  /* padding: 30px; */
-}
-.panel-chat {
-  height: 100vh;
-  position: relative;
-  text-align: left;
-  
-}
-.panel-chat .header-chat input {
-  padding: 5px;
-  border: 1px solid #ccc;
-  
-}
-.panel-chat .header-chat {
-  background-color: #161819;
-  position: absolute;
-  top: 0;
-  left: 0;
-  padding: 10px;
-  right: 0;
-
-}
-.panel-chat .body-chat {
-  padding: 50px 10px;
-  width: 100%;
-  height: 90%;
-  box-sizing: border-box;
-  overflow-y: scroll;
-}
-.panel-chat .message-chat input[type="submit"] {
-  position: absolute;
-  right: 20px;
-  border: 1px solid #222;
-  top: 19px;
-  padding: 5px 20px;
-}
-.panel-chat .message-chat input[type="text"] {
-  width: calc(100% - 30px);
-  padding: 15px;
-  border: 1px solid #ccc;
-  border-radius: 20px;
-  background: #1C1E1F;
-  box-shadow: 0px 4px 20px -5.717px rgba(0, 0, 0, 0.15);
-}
-.panel-chat .message-chat {
-  position: absolute;
-  padding: 10px;
+  background: #161819;
+  color: #f2f2f2;
   bottom: 0;
-  left: 0;
-  right: 0;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }

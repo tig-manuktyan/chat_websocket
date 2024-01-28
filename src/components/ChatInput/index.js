@@ -1,24 +1,31 @@
-import React, { useState } from 'react';
-import PropTypes from 'prop-types';
+import React, { useState } from "react";
+import PropTypes from "prop-types";
+import ISend from "../Icons/ISend";
 
 const ChatInput = ({ onSubmitMessage }) => {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    onSubmitMessage(message);
-    setMessage('');
+    if(message){
+      onSubmitMessage(message);
+      setMessage("");
+    }
   };
 
   return (
     <form action="." onSubmit={handleSubmit}>
       <input
         type="text"
-        placeholder={'Enter message...'}
+        placeholder={"Enter message..."}
         value={message}
         onChange={(e) => setMessage(e.target.value)}
       />
-      <input type="submit" value={'Send'} />
+      {message && (
+        <button type="submit">
+          <ISend />
+        </button>
+      )}
     </form>
   );
 };

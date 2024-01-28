@@ -1,16 +1,16 @@
 import React from "react";
 import "./index.css";
 
-const Message = ({ name, message }) => (
-  <div className={"messageBox"}>
-    <div className="avatar">
-      <p>{name[0].toUpperCase()}</p>
+const Message = ({ message, isCurrentUser }) => {
+  const messageClass = isCurrentUser ? "message-right" : "message-left";
+
+  return (
+    <div className={`message ${messageClass}`}>
+      <div className={"messageItem"}>
+        <p className={"message"}>{message}</p>
+      </div>
     </div>
-    
-    <div className={"messageItem"}>
-      <p className={"message"}>{message}</p>
-    </div>
-  </div>
-);
+  );
+};
 
 export default Message;
