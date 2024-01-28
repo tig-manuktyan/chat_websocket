@@ -9,7 +9,3 @@ $ npm start_client
 
 # build for production and launch server
 $ npm start_server
-
-# generate static project
-$ npm generate
-```
